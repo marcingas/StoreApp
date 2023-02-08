@@ -1,4 +1,4 @@
-public class ProductForSale {
+public abstract class ProductForSale {
     private String type;
     private double price;
     private String description;
@@ -12,8 +12,6 @@ public class ProductForSale {
     public void printPricedLineItem(int quantity){
         System.out.println(quantity + " is quantity, and the price is: " + price);
     }
-    public void showDetails(){
-
-    }
+   public abstract void showDetails();
 
 }
