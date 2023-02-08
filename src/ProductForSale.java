@@ -15,7 +15,7 @@ public abstract class ProductForSale {
         return quantity * price;
 
     }
-    public void printPricedLineItem(int quantity){
+    public void printPricedItem(int quantity){
         System.out.printf("%d quantity at $%8.2f each, %-15s %-35s %n", quantity, price, type, description);
     }
 
