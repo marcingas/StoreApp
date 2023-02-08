@@ -8,12 +8,19 @@ public class Store {
    public static void main(String[] args) {
       storeProducts.add(new ArtObject("Oil Paintings", 1500, "Impressionistic work by John Whale in 2010"));
       storeProducts.add(new ArtObject("Sculpture", 2000, "Bronze work by Paul Newman, produce in 1950" ));
+      storeProducts.add(new Furniture("Desk", 500, "Mahogany Desk"));
+      storeProducts.add(new Furniture("Lamp", 200, "Queen's Elisabeth private lamp"));
       listProducts();
        System.out.println("\nOrder 1");
        var order1 = new ArrayList<OrderItem>();
        addItemToOrder(order1,1, 2);
        addItemToOrder(order1, 0, 1);
        printOrderedItems(order1);
+       System.out.println("\nOrder 2");
+       var order2 = new ArrayList<OrderItem>();
+       addItemToOrder(order2,3, 5);
+       addItemToOrder(order2,2, 1);
+       printOrderedItems(order2);
 
 
 
